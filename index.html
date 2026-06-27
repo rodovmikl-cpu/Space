@@ -81,8 +81,10 @@
     let reg = document.getElementById("reg").value;
       localStorage.setItem("reg",reg);
     alert("hello");
+      }
       function log(){
-        savedreg = localStorage.getItem("reg");
+        let reg = document.getElementById("reg").value;
+       let savedreg = localStorage.getItem("reg");
         if (reg === savedreg){
           alert("you are in");
       }else{
