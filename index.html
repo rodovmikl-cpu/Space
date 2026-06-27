@@ -85,6 +85,7 @@
        let savedreg = localStorage.getItem("reg");
         if (log === savedreg){
           window.location.href = "main.html";
+          localStorage.setItem("sound","yes");
       }else{
           alert("incorrect reg");
         }
