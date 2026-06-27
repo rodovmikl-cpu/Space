@@ -78,13 +78,12 @@
       function reg(){
     let reg = document.getElementById("reg").value;
       localStorage.setItem("reg",reg);
-    alert("you are registrayted now");
+    alert("you are registrered now");
       }
       function log(){
         let log = document.getElementById("log").value;
        let savedreg = localStorage.getItem("reg");
         if (log === savedreg){
-          alert("you are in");
           window.location.href = "main.html";
       }else{
           alert("incorrect reg");
