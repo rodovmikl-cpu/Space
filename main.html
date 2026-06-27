@@ -3,7 +3,13 @@
   <head>
   </head>
   <body> 
-  <video autoplay muted loop><source src="space.MP4" type="video/mp4"</video>
+  <video id="video" loop><source src="space.MP4" type="video/mp4" </video>
+    <script>
+      const video = document.getElementById("video");
+      if localStorage.getItem("sound")==="yes"){
+        video.play();
+      }
+    </script>
   </body>
   <style>
     body{
